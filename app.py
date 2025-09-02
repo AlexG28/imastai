@@ -5,7 +5,7 @@ import json
 
 GPU_URL = os.getenv("GPU_URL", "http://localhost:11434/api/chat")
 
-IS_OLLAMA = "localhost:11434" in GPU_URL
+IS_OLLAMA = "11434" in GPU_URL
 
 @cl.on_message
 async def on_message(message: cl.Message):
